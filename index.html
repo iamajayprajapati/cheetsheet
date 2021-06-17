@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    
+    <title>cheatsheet</title>
+</head>
+<body>
+    <nav>
+        <span class="logo"><img src="copyy.png" alt=""></span>
+        <div class="content">
+            This is html cheatsheet for you!
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li><b>HTML Boilerplate</b> This is a html boilerplate code
+                <pre class="language-js">
+                    <code>var i = 45</code>
+                </pre>
+            </li>
+            <li><b>HTML Boilerplate</b> This is a html boilerplate code
+                <pre class="language-js">
+                    <code>var i = 45</code>
+                </pre>
+            </li>
+            <li><b>Python</b> Hangman Game!
+                <pre class="language-python">
+<code>
+import random
+import string
+
+r_words=['triangle','grandeur','hogwarts','damsel','animesh','billbook']
+word=''
+w_c=''
+w_w=['a','e','i','o','u']
+score=3
+def gen_puzzle():
+global w_c
+w_c=word
+for w in w_c:
+    if w not in w_w:
+        w_c=w_c.replace(w,' _ ')
+print w_c
+
+def input_word():
+global w_c
+global score
+word_g = raw_input("Enter Word: ")
+if word_g in word:
+    w_w.append(word_g)
+    print"Correct!!"
+else:
+    print"Wrong!"
+    score-=1
+
+def puzzle():
+global score
+global word
+word=r_words[random.randint(0,len(r_words)-1)]
+while score>0:
+    gen_puzzle()
+    if w_c==word:
+        print"You Won!!"
+        break
+    else:
+        input_word()
+    if score==0:
+        print"You Loose!!"
+puzzle()
+</code>
+                </pre>
+            </li>
+            <li><b>HTML Boilerplate</b> This is a html boilerplate code
+                <pre class="language-html">
+<code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+      &lt;meta charset='utf-8'&gt;
+      &lt;meta http-equiv='X-UA-Compatible' content='IE=edge'&gt;
+      &lt;title&gt;help&lt ;/title&gt;
+      &lt;meta name='viewport' content='width=device-width, initial-scale=1'&gt;
+      &lt;link rel='stylesheet' type='text/css' media='screen' href='main.css'&gt;
+      &lt;script src='main.js'&gt;&lt ;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      ..........
+    &lt;/body&gt;
+    &lt;/html&gt;
+    
+</code>
+                </pre>
+            </li>
+            <li>Marquee Tag
+                <pre class="language-html">
+<code>
+&lt;!DOCTYPE html &gt;
+&lt;html &gt;
+
+    &lt;head &gt;
+        &lt;title &gt;HTML marquee Tag &lt;/title &gt;
+    &lt;/head &gt;
+
+    &lt;body &gt;
+        &lt;marquee &gt;This is basic example of marquee &lt;/marquee &gt;
+        &lt;marquee direction = "up" &gt;The direction of text will be from bottom to top. &lt;/marquee &gt;
+    &lt;/body &gt;
+
+&lt;/html &gt;
+</code>
+                </pre>
+            </li>
+            <li><b>Python</b> Date logger
+                <pre class="language-python">
+<code>
+from datetime import datetime
+with open("d:\log.text",'ab') as a:
+a.write( str(datetime.now()).split('.')[0]+'\n')
+a.close()
+</code>
+                </pre>
+            </li>
+        </ol>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+
+}
+.container{
+    /* background-color:red; */
+    width: 100vh;
+    padding: 32px 0;
+    margin: auto;
+    font-family: 'pota One',cursive;
+}
+.container language js{
+    background-color: rgb(155, 10, 10);
+}
+.logo{
+    padding: -1 -1px;
+    background: rgb(250, 248, 248);
+
+
+}
+.logo img{
+    width: 50px;
+}
+.toolbar-item copy-to-clipboard-button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 16px !important;
+}
